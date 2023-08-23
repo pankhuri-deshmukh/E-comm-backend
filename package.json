@@ -7,7 +7,7 @@
     "watch" : "tsc.cmd -w",
     "start": "node ./dist/index.js",
     "dev": "nodemon ./dist/index.js",
-    "build": "tsc.cmd -p ."
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
