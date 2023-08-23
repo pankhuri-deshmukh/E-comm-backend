@@ -24,8 +24,9 @@ const main = async () => {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     logging: true,
-    synchronize: false,
+    synchronize: true,
     entities: [Products, Password_Reset, Review, Users, Orders, OrderItem, Cart, Cart_Items],
+    connectTimeout: 60000,
   });
 
   connectDB.initialize()
