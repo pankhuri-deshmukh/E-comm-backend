@@ -13,7 +13,7 @@ import { Cart } from "./entities/Cart";
 import { Cart_Items } from "./entities/Cart_Items";
 import * as dotenv from "dotenv"
 
-dotenv.config({path : __dirname+'/.env'})
+dotenv.config()
 
 
 const main = async () => {
@@ -46,8 +46,9 @@ const main = async () => {
     })
   );
 
-  app.listen(4001, () => {
-    console.log("SERVER RUNNING ON PORT 4001...");
+  const PORT = process.env.PORT
+  app.listen(PORT, () => {
+    console.log(`SERVER RUNNING ON PORT ${PORT}...`);
   });
 };
 

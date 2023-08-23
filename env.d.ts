@@ -4,6 +4,7 @@ declare global {
             PROTECTED_STRING : string,
             DB_USERNAME : string,
             DB_PASSWORD : string,
+            PORT : number,
         }
     }
 }

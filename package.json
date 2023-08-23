@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./dist/index.ts",
-    "dev": "nodemon ./src/index.ts",
+    "watch" : "tsc.cmd -w",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./dist/index.js",
     "build": "tsc.cmd -p ."
   },
   "author": "",
