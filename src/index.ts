@@ -19,7 +19,7 @@ dotenv.config()
 const main = async () => {
   const connectDB = await new DataSource({
     type: "mysql",
-    database: "store_w_graphql",
+    database: process.env.DATABASE,
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     logging: true,
