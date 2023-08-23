@@ -20,6 +20,7 @@ const main = async () => {
   const connectDB = await new DataSource({
     type: "mysql",
     database: process.env.DATABASE,
+    host: process.env.HOST,
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     logging: true,
