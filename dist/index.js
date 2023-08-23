@@ -49,7 +49,7 @@ const main = async () => {
         username: process.env.DB_USERNAME,
         password: process.env.DB_PASSWORD,
         logging: true,
-        synchronize: true,
+        synchronize: false,
         entities: [Products_1.Products, Password_Reset_1.Password_Reset, Review_1.Review, Users_1.Users, Orders_1.Orders, Order_Items_1.OrderItem, Cart_1.Cart, Cart_Items_1.Cart_Items],
         connectTimeout: 60000,
     });
